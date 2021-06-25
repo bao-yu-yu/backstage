@@ -6,7 +6,8 @@
     "run": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "push": "git push origin master"
+    "push": "git push origin master",
+    "add": "git add *"
   },
   "dependencies": {
     "core-js": "^3.15.1",
