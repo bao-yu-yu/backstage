@@ -13,21 +13,26 @@
 </template>
 
 <script>
+    import * as sysApi from "../base/api/system.js"
     export default {
         name: 'Sidebar',
         data(){
             return{
                 // 侧边栏数据信息
-                pageInformation:[
-                    {id:0,url:'a',name:'跳转到A页面',fontColor:"#BFCBD9"},
-                    {id:1,url:'b',name:'跳转到B页面',fontColor:"#BFCBD9"}
-                ]
+                pageInformation:[]
             }
+        },
+        created:function () {
+            sysApi.sys_getDictionary({}).then((res)=>{
+               console.log(res)
+            });
+            this.pageInformation.push({id:0,url:'a',name:'跳转到A页面',fontColor:"#BFCBD9"});
+            this.pageInformation.push({id:1,url:'b',name:'跳转到B页面',fontColor:"#BFCBD9"});
         },
         methods: {
             // 页面点击
             pageOn(val) {
-                for (var i=0;i<this.pageInformation.length;i++){
+                for (let i=0; i<this.pageInformation.length; i++){
                     //文字变色
                     if(val===this.pageInformation[i].id){
                         this.pageInformation[val].fontColor="#409EFF";
