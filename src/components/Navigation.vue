@@ -7,7 +7,6 @@
         <div id="user">
             <img class="userImg" src="../assets/logo.png" alt="">
             <div class="userName">{{msg}}</div>
-
         </div>
     </div>
 </template>
@@ -60,8 +59,9 @@
         margin:20px 20px 0 0;
     }
     .userName{
+        margin:0 10px 0 0;
         float: right;
-        line-height:90px;
+        line-height:85px;
         font-weight:100;
         font-size: 22px;
         color: white;

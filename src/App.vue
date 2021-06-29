@@ -4,10 +4,10 @@
           <Navigation msg="这是导航栏"/>
       </div>
       <div class="share sidebar">
-          <Sidebar msg="这是侧边栏"/>
+          <Sidebar msg="page"/>
       </div>
       <div class="share page">
-          <Page msg="这是内容页"/>
+          <router-view></router-view>
       </div>
   </div>
 </template>
@@ -15,7 +15,6 @@
 <script>
 import Navigation from './components/Navigation.vue'
 import Sidebar from './components/Sidebar.vue'
-import Page from './components/Page.vue'
 
 export default {
   name: 'App',
@@ -23,9 +22,7 @@ export default {
       // 导航栏
       Navigation,
       // 侧边栏
-      Sidebar,
-      // 内容页
-      Page
+      Sidebar
   }
 }
 </script>
@@ -35,6 +32,7 @@ export default {
     html, body{
         padding:0;
         margin:0;
+        /*height: 937px;*/
         height: 100%;
         width: 100%;
     }
@@ -61,12 +59,12 @@ export default {
      /*导航栏*/
     .navigation{
         width: 100%;
-        height: 10%;
+        height: 80px;
     }
     /*侧边栏*/
     .sidebar{
-        width: 10%;
-        height: 90%;
+        width: 190.3px;
+        height: calc(100% - 80px); ;
     }
     /*内容页*/
     .page{

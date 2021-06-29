@@ -1,14 +1,17 @@
 <template>
     <div id="app">
-
+        b
     </div>
 </template>
 
 <script>
+
     export default {
-        name: 'Page',
+        name: 'B',
         props: {
             msg: String
+        },
+        components: {
         }
     }
 </script>
