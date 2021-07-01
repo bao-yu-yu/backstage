@@ -26,7 +26,7 @@
             sysApi.sys_getDictionary({}).then((res)=>{
                console.log(res)
             });
-            this.pageInformation.push({id:0,url:'a',name:'跳转到A页面',fontColor:"#BFCBD9"});
+            this.pageInformation.push({id:0,url:'music',name:'我的音乐',fontColor:"#BFCBD9"});
             this.pageInformation.push({id:1,url:'b',name:'跳转到B页面',fontColor:"#BFCBD9"});
         },
         methods: {

@@ -69,6 +69,10 @@ export default {
     /*内容页*/
     .page{
         width: 90%;
-        height: 90%;
+        height: calc(100% - 80px);
+        overflow: scroll;
+    }
+    .page::-webkit-scrollbar {
+        display: none;
     }
 </style>

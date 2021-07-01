@@ -7,8 +7,8 @@ import B from "../components/page/B";
 
 const routes = [
     {
-        path:"/a",
-        name:"AAAA",
+        path:"/music",
+        name:"我的音乐",
         component: A
     },
     {
